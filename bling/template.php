@@ -13,8 +13,9 @@ function bling_css_alter(&$css) {
   if (arg(0) == 'node' && is_numeric(arg(1)) && (arg(2) == 'done' || !arg(2))) {
     $node = node_load(arg(1));
     if ($node->type == 'donation_form') {
-      if (isset($css['sites/all/themes/bling/layout.css'])) {
-        $css['sites/all/themes/bling/layout.css']['data'] = 'sites/all/themes/bling/donation-layout.css';
+      $theme_path = drupal_get_path('theme', 'bling');
+      if (isset($css[$theme_path . '/layout.css'])) {
+        $css[$theme_path . '/layout.css']['data'] = $theme_path . '/donation-layout.css';
       }
     }
   }
