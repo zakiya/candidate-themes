@@ -12,8 +12,81 @@
 // Use the container() mixin to create your initial grid context.
 // Use the span-columns() mixin to declare the width of an element on the grid.
 
-$total-columns  : 12;             // a 12-column grid
-$column-width   : 80px;           // each column is 80px wide
-$gutter-width   : 10px;           // 10px gutters between columns
-$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+// The values are required by susy
+$total-columns  : 12;             
+$column-width   : 63px;           
+$gutter-width   : 15px;           
+$grid-padding   : $gutter-width;  
+$container-style: static;
 
+// Setup breakpoints
+$bp-mobile :  720px;
+
+
+// Head and full width columns
+@include at-breakpoint(0 5 $bp-mobile) {
+  .head, 
+  .main,
+  .foot, 
+  .close {
+    @include container;
+  }
+  .logo-top {
+    @include span-columns(1, 5);
+  }
+  .donation-message {
+    @include span-columns(3, 5);
+  }
+  .image-top {
+    @include span-columns(1 omega, 5); // We use omega because it is the last column.
+  }
+}
+@include at-breakpoint($bp-mobile+1 12) {
+  .head, 
+  .main,
+  .foot, 
+  .close {
+    @include container;
+  }
+  .logo-top {
+    @include span-columns(2, 12);
+  }
+  .donation-message {
+    @include span-columns(7, 12);
+  }
+  .image-top {
+    @include span-columns(3 omega, 12); // We use omega because it is the last column.
+  }
+}
+
+
+// Main
+@include at-breakpoint(0 5 $bp-mobile) {
+  .node {
+    @include span-columns(5 omega, 5);
+  }
+}
+@include at-breakpoint($bp-mobile 12) {
+  .node {
+    @include push(2); // We use push mixin to force an empty column
+    @include span-columns(10 omega, 12);
+  }
+}
+
+// Foot
+@include at-breakpoint(0 5 $bp-mobile) {
+  .image-foot {
+    @include span-columns(1, 5);
+  }
+  .efficiency-footer {
+    @include span-columns(4 omega , 5);
+  }
+}
+@include at-breakpoint($bp-mobile 12) {
+  .image-foot {
+    @include span-columns(4, 12);
+  }
+  .efficiency-footer {
+    @include span-columns(8 omega , 12);
+  }
+}
