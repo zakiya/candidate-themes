@@ -13,17 +13,7 @@
   .logo-top {
     width: 16.8%;
     float: left;
-    margin-right: 4%; }
-
-  .donation-message {
-    width: 58.4%;
-    float: left;
-    margin-right: 4%; }
-
-  .image-top {
-    width: 16.8%;
-    float: right;
-    margin-right: 0; } }
+    margin-right: 4%; } }
 @media (min-width: 721px) {
   .head, .main, .foot, .close {
     width: 921px;
@@ -82,7 +72,7 @@
     float: right;
     margin-right: 0; } }
 body {
-  font-family: sans-serif; }
+  font-family: Helvetica, Arial, sans-serif; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -283,28 +273,10 @@ button {
 .cf {
   zoom: 1; }
 
-/*#########
-Main Styles */
 body {
   background-image: url(/sites/all/themes/bling/img/body-bg.gif);
   background-position: initial;
   background-repeat: repeat; }
-
-.head {
-  background-color: #f5f5f5;
-  margin-top: 15px;
-  padding-bottom: 30px;
-  padding-top: 15px; }
-
-.main {
-  background-color: #fff; }
-
-.foot {
-  background-color: #f5f5f5;
-  padding-bottom: 24px; }
-
-.close {
-  text-align: right; }
 
 @media print {
   * {
@@ -349,3 +321,14 @@ body {
 /* IE Max-width hack */
 #container, #footer {
   width: expression(document.body.clientWidth<742?"740px":document.body.clientWidth>1202?"1200px":"auto"); }
+body {
+  background-image: url(/sites/all/themes/bling/img/body-bg.gif);
+  background-position: initial;
+  background-repeat: repeat;
+  font-size: 100%; }
+
+h1 {
+  margin: 0 0 .5em 0; }
+@media (min-width: 0) and (max-width: 720px) {
+  h1 {
+    font-size: 1.2em; } }

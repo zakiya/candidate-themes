@@ -20,11 +20,12 @@ $grid-padding   : $gutter-width;
 $container-style: static;
 
 // Setup breakpoints
-$bp-mobile :  720px;
+$bp-first: 720px;
+$bp-mobile: 0 $bp-first;
 
 
 // Head and full width columns
-@include at-breakpoint(0 5 $bp-mobile) {
+@include at-breakpoint(0 5 $bp-first) {
   .head, 
   .main,
   .foot, 
@@ -35,13 +36,11 @@ $bp-mobile :  720px;
     @include span-columns(1, 5);
   }
   .donation-message {
-    @include span-columns(3, 5);
   }
   .image-top {
-    @include span-columns(1 omega, 5); // We use omega because it is the last column.
   }
 }
-@include at-breakpoint($bp-mobile+1 12) {
+@include at-breakpoint($bp-first+1 12) {
   .head, 
   .main,
   .foot, 
@@ -61,12 +60,12 @@ $bp-mobile :  720px;
 
 
 // Main
-@include at-breakpoint(0 5 $bp-mobile) {
+@include at-breakpoint(0 5 $bp-first) {
   .node {
     @include span-columns(5 omega, 5);
   }
 }
-@include at-breakpoint($bp-mobile 12) {
+@include at-breakpoint($bp-first 12) {
   .node {
     @include push(2); // We use push mixin to force an empty column
     @include span-columns(10 omega, 12);
@@ -74,7 +73,7 @@ $bp-mobile :  720px;
 }
 
 // Foot
-@include at-breakpoint(0 5 $bp-mobile) {
+@include at-breakpoint(0 5 $bp-first) {
   .image-foot {
     @include span-columns(1, 5);
   }
@@ -82,7 +81,7 @@ $bp-mobile :  720px;
     @include span-columns(4 omega , 5);
   }
 }
-@include at-breakpoint($bp-mobile 12) {
+@include at-breakpoint($bp-first 12) {
   .image-foot {
     @include span-columns(4, 12);
   }
