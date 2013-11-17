@@ -1,15 +1,16 @@
 <div class="head">
   <div class="logo-top">
-    <a href="/"><img src="/sites/all/themes/bling/img/IRClogo_RGB_lrg.jpg" /></a>
+    <a href="/"><img src="/sites/all/themes/bling/img/IRClogo_RGB_lrg.jpg" alt="International Rescue Committee Logo"/></a>
   </div>
 
   <div class="donation-message">
     <?php if ($title): print '<h1>'. $title .'</h1>'; endif; ?>
-    <p>On the ground in some of the world&#39;s most troubled places, the IRC helps people at their moment of greatest need &mdash; providing shelter, medical care, and safety. And we stay for as long as we are able to help in the rebuilding of lives and livelihoods.</p><p>&nbsp;</p><p><strong>Make a tax-deductible gift to help the IRC aid refugees around the world.</strong></p>
+    <p>On the ground in some of the world&#39;s most troubled places, the IRC helps people at their moment of greatest need &mdash; providing shelter, medical care, and safety. And we stay for as long as we are able to help in the rebuilding of lives and livelihoods.</p>
+    <p><strong>Make a tax-deductible gift to help the IRC aid refugees around the world.</strong></p>
   </div>
 
   <div class="image-top">
-    <img src="/sites/all/themes/bling/img/efficiency.png" />
+    <img src="/sites/all/themes/bling/img/efficiency.png" alt="IRC efficiency information" />
       <div class="donation-image-caption">
         More than ninety cents of every dollar we spend is used to support IRC programs.
       </div>
@@ -24,7 +25,7 @@
 
 <div class="foot">
   <div class="image-foot">
-    <img src="/sites/all/themes/bling/img/certifications.png" /><br />
+    <img src="/sites/all/themes/bling/img/certifications.png" alt="Certifications"/><br />
   </div>
   <div class="efficiency-footer">
     Of every $1 the IRC spends, more than 90 cents goes to programs and
