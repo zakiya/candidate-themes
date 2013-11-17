@@ -22,6 +22,7 @@ $container-style: static;
 // Setup breakpoints
 $bp-first: 720px;
 $bp-mobile: 0 $bp-first;
+$bp-wide: $bp-first;
 
 
 // Head and full width columns
@@ -34,10 +35,6 @@ $bp-mobile: 0 $bp-first;
   }
   .logo-top {
     @include span-columns(1, 5);
-  }
-  .donation-message {
-  }
-  .image-top {
   }
 }
 @include at-breakpoint($bp-first+1 12) {

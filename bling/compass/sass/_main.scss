@@ -1,3 +1,57 @@
 .main {
   background-color: #fff;
 }
+// Forms
+.form-text {
+  padding: 3px;
+  width: 349px;
+  @include breakpoint($bp-mobile) {
+   font-size: 1.5em;
+    height: 2em;
+  }
+
+}
+.webform-component-fieldset {
+  border: none;
+  @include breakpoint($bp-wide) {
+    display: inline;
+    width: 45%;
+  }
+}
+.form-radios .form-item {
+  display: inline-block;
+  padding-right: 15px;
+  input, 
+  label {
+    display: block;
+    text-align: center;
+  }
+  label {
+    padding-top: 4px;
+  } 
+}
+#webform-component-donation {
+  @include breakpoint($bp-wide) {
+    width: 90%;
+  }
+  legend {
+    display: none;
+  }
+  .form-text {
+    font-size: 100%;
+    height: auto;
+    width: auto;
+  }
+}
+#webform-component-donation--amount {
+  margin: 0;
+}
+#webform-component-donation--other-amount {
+  margin: 0.41em 0 0 ;
+  label {
+    display: none;
+  }
+}
+#edit-submitted-donation-amount {
+  float: left;
+}

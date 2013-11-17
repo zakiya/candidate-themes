@@ -321,6 +321,7 @@ body {
 /* IE Max-width hack */
 #container, #footer {
   width: expression(document.body.clientWidth<742?"740px":document.body.clientWidth>1202?"1200px":"auto"); }
+
 body {
   background-image: url(/sites/all/themes/bling/img/body-bg.gif);
   background-position: initial;
@@ -332,3 +333,82 @@ h1 {
 @media (min-width: 0) and (max-width: 720px) {
   h1 {
     font-size: 1.2em; } }
+
+.close {
+  text-align: right; }
+
+.head {
+  background-color: #f5f5f5;
+  margin-top: 15px;
+  padding-bottom: 30px;
+  padding-top: 15px; }
+
+@media (min-width: 0) and (max-width: 720px) {
+  .logo-top img {
+    float: left;
+    height: auto;
+    width: 100%; } }
+
+@media (min-width: 0) and (max-width: 720px) {
+  .image-top {
+    background: #feeec0;
+    clear: both;
+    display: table;
+    padding: 10px 0; }
+  .image-top img {
+    float: left;
+    height: auto;
+    padding: 10px;
+    width: 45%; } }
+
+.foot {
+  background-color: #f5f5f5;
+  padding-bottom: 24px; }
+
+.main {
+  background-color: #fff; }
+
+.form-text {
+  padding: 3px;
+  width: 349px; }
+@media (min-width: 0) and (max-width: 720px) {
+  .form-text {
+    font-size: 1.5em;
+    height: 2em; } }
+
+.webform-component-fieldset {
+  border: none; }
+@media (min-width: 720px) {
+  .webform-component-fieldset {
+    display: inline;
+    width: 45%; } }
+
+.form-radios .form-item {
+  display: inline-block;
+  padding-right: 15px; }
+.form-radios .form-item input, .form-radios .form-item label {
+  display: block;
+  text-align: center; }
+.form-radios .form-item label {
+  padding-top: 4px; }
+
+@media (min-width: 720px) {
+  #webform-component-donation {
+    width: 90%; } }
+#webform-component-donation legend {
+  display: none; }
+#webform-component-donation .form-text {
+  font-size: 100%;
+  height: auto;
+  width: auto; }
+
+#webform-component-donation--amount {
+  margin: 0; }
+
+#webform-component-donation--other-amount {
+  margin: 0.41em 0 0; }
+#webform-component-donation--other-amount label {
+  display: none; }
+
+#edit-submitted-donation-amount {
+  float: left; }
