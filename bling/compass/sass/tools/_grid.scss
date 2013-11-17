@@ -1,0 +1,19 @@
+// --------------------------------------------------------
+// GRID and LAYOUT STLES
+// --------------------------------------------------------
+
+// --------------------------------------------------------
+// VARIABLES
+// --------------------------------------------------------
+ 
+// Suzy Setup
+// @see http://susy.oddbird.net/guides/getting-started
+// The basic Susy grid is composed using two simple mixins:
+// Use the container() mixin to create your initial grid context.
+// Use the span-columns() mixin to declare the width of an element on the grid.
+
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 80px;           // each column is 80px wide
+$gutter-width   : 10px;           // 10px gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+

@@ -14,8 +14,8 @@ function bling_css_alter(&$css) {
     $node = node_load(arg(1));
     if ($node->type == 'donation_form') {
       $theme_path = drupal_get_path('theme', 'bling');
-      if (isset($css[$theme_path . '/layout.css'])) {
-        $css[$theme_path . '/layout.css']['data'] = $theme_path . '/donation-layout.css';
+      if (isset($css[$theme_path . '/css/layout.css'])) {
+        $css[$theme_path . '/css/layout.css']['data'] = $theme_path . '/css/donation-layout.css';
       }
     }
   }
