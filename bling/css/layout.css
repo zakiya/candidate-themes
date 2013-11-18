@@ -13,39 +13,48 @@
  * is IE6 which will just hide the navigation block completely in these
  * instances due to a positioning bug.
  */
+/* line 20, ../compass/sass/layout.scss */
 #content, #sidebar-first, #sidebar-second {
   float: left;
   display: inline;
   position: relative; }
 
+/* line 26, ../compass/sass/layout.scss */
 #content {
   width: 100%; }
 
+/* line 29, ../compass/sass/layout.scss */
 body.sidebar-first #content {
   width: 80%;
   left: 20%;
   /* LTR */ }
 
+/* line 33, ../compass/sass/layout.scss */
 body.sidebar-second #content {
   width: 80%; }
 
+/* line 36, ../compass/sass/layout.scss */
 body.two-sidebars #content {
   width: 60%;
   left: 20%; }
 
+/* line 41, ../compass/sass/layout.scss */
 #sidebar-first {
   width: 20%;
   left: -80%;
   /* LTR */ }
 
+/* line 46, ../compass/sass/layout.scss */
 body.two-sidebars #sidebar-first {
   left: -60%;
   /* LTR */ }
 
+/* line 50, ../compass/sass/layout.scss */
 #sidebar-second {
   float: right;
   /* LTR */
   width: 20%; }
 
+/* line 55, ../compass/sass/layout.scss */
 .section {
   margin: 10px; }
