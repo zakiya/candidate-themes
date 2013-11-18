@@ -9,6 +9,7 @@
     img {
       float: left;
       height: auto;
+      margin: 0 .1em .1em 0;
       width: 100%;
     }
   }
@@ -18,7 +19,7 @@
     background: tint($clr-yellow, 70%);
     clear: both;
     display: table;
-    padding: 10px 0;
+    padding: .2em 0;
     img {
       float: left;
       height: auto;
@@ -26,4 +27,9 @@
       width: 45%;
     }
   }
+}
+.donation-image-caption {
+  color: $clr-lightertext;
+  font-size: .8em;
+  line-height: 1.2em;
 }
