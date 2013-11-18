@@ -1,38 +1,61 @@
 .main {
   background-color: #fff;
+  padding-bottom: 100px;
 }
 // Forms
+fieldset {
+  margin-bottom: 0;
+}
+.description {
+  color: $clr-lighttext;
+  line-height: 1.5em;
+  padding: 0 .35em;
+}
+.error {
+  display: block;
+  font-size: .85em;
+  font-weight: normal;
+  padding: 0 0 .75em 0;
+}
 .form-text {
   padding: 3px;
-  width: 349px;
   @include breakpoint($bp-mobile) {
-   font-size: 1.5em;
+    font-size: 1.5em;
     height: 2em;
+    width: 349px;
   }
-
+}
+.form-item {
+  margin: .5em 0;
 }
 .webform-component-fieldset {
   border: none;
-  @include breakpoint($bp-wide) {
-    display: inline;
-    width: 45%;
+  @include breakpoint($bp-mobile) {
+    margin-bottom: 30px;
+  }
+  .form-item {
+    margin: 1em 0;
   }
 }
 .form-radios .form-item {
   display: inline-block;
+  margin-top: .7em;
   padding-right: 15px;
   input, 
   label {
     display: block;
     text-align: center;
   }
+  input {
+    padding-top: 5px;
+  }
   label {
     padding-top: 4px;
   } 
 }
 #webform-component-donation {
-  @include breakpoint($bp-wide) {
-    width: 90%;
+  label {
+    width: auto;
   }
   legend {
     display: none;
@@ -42,16 +65,78 @@
     height: auto;
     width: auto;
   }
+  @include breakpoint($bp-wide) {
+    width: 90%;
+  }
+}
+#webform-component-donor-information,
+#webform-component-billing-information {
+  @include breakpoint($bp-wide) {
+    float: left;
+    width: 345px;
+  }
+}
+#webform-component-donor-information,
+#webform-component-billing-information,
+#webform-component-payment-information {
+  legend {
+    font-weight: bold;
+  }
+  label {
+    font-weight: normal
+  }
+  @include breakpoint($bp-wide) {
+    label {
+      display: inline-block;
+      width: 130px;
+    }
+    .form-text,
+    select {
+      display: inline-block;
+      width: 175px;
+    }
+  }
 }
 #webform-component-donation--amount {
   margin: 0;
 }
 #webform-component-donation--other-amount {
+  display: inline-block;
   margin: 0.41em 0 0 ;
+  width: 54px;
+  .form-text {
+    width: 30px;
+  }
   label {
     display: none;
+  }
+  @include breakpoint($bp-wide) {
+    width: 154px;
+  }
+}
+#webform-component-payment-information {
+  legend {
+    font-weight: bold;
+  }
+  select {
+    width: auto;
+  }
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  .fieldset-wrapper > div {
+    display: inline-block;
+    width: 345px;
   }
 }
 #edit-submitted-donation-amount {
   float: left;
+}
+.fundraiser_submit_message {
+  color: $clr-lightertext;
+  clear: both;
+  img {
+    padding: 0 10px 0 0;
+  }
 }
