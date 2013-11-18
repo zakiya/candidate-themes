@@ -1,4 +1,22 @@
-
 .close {
+  color: #848484;
+  font-size: .85em;
   text-align: right;
+  padding: 2em 0;
+  a,
+  a:hover, 
+  a:active,
+  a.active,
+  a:visited {
+    border-bottom: 1px dotted;
+    color: #848484;
+    font-weight: 400;
+  }
+  a:hover {
+    color: tint(#848484, 60%);
+  }
+  @include breakpoint($bp-mobile) {
+    text-align: center;
+  }
 }
+

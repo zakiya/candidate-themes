@@ -1,6 +1,6 @@
 .main {
   background-color: #fff;
-  padding-bottom: 100px;
+  padding-bottom: 2em;
 }
 // Forms
 fieldset {
@@ -28,6 +28,9 @@ fieldset {
 .form-item {
   margin: .5em 0;
 }
+#edit-actions {
+  border: #ffedba;
+}
 .webform-component-fieldset {
   border: none;
   @include breakpoint($bp-mobile) {
@@ -52,6 +55,9 @@ fieldset {
   label {
     padding-top: 4px;
   } 
+}
+.fundraiser-donation-form > div {
+  position: relative;
 }
 #webform-component-donation {
   label {
@@ -119,6 +125,7 @@ fieldset {
     font-weight: bold;
   }
   select {
+    margin-right: .5em;
     width: auto;
   }
   fieldset {
@@ -133,10 +140,32 @@ fieldset {
 #edit-submitted-donation-amount {
   float: left;
 }
+.form-submit {
+  @include single-text-shadow;
+  @include background(image-url("foo.png"),
+                      linear-gradient(top, #ffe59e, #ffc828),
+                      radial-gradient(#ffe59e, #ffc828 100px)
+                      );
+  border: 2px solid #fed256;
+  color: #524a35;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .5em 1em;
+  width: 100%;
+  @include breakpoint($bp-wide) {
+    width: auto;
+  }
+}
 .fundraiser_submit_message {
   color: $clr-lightertext;
-  clear: both;
   img {
     padding: 0 10px 0 0;
+  }
+  @include breakpoint($bp-wide) {
+    bottom: 0;
+    left: 150px;
+    position: absolute;
+    width: 270px;
   }
 }
