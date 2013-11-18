@@ -1,4 +1,15 @@
 .foot {
   background-color: #f5f5f5;
+  color: $clr-foottext;
   padding-bottom: 24px;
+  img {
+    margin-left: 5px;
+    @include breakpoint($bp-mobile) {
+     display: block;
+     margin: 0 auto; 
+    }
+  }
+  p {
+    margin: 0 0 .85em;
+  }
 }

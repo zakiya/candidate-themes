@@ -28,11 +28,10 @@
     <img src="/sites/all/themes/bling/img/certifications.png" alt="Certifications"/><br />
   </div>
   <div class="efficiency-footer">
-    Of every $1 the IRC spends, more than 90 cents goes to programs and
+    <p>Of every $1 the IRC spends, more than 90 cents goes to programs and
     services that directly benefit refugees and war affected
-    populations.<br />
-    <br />
-    Donors living outside the US and Canada, please use our<br />
+    populations.</p>
+    <p>Donors living outside the US and Canada, please use our<br />
     <a href="/donate/international">international donation form</a>
   </div>
 </div><!--/foot-->

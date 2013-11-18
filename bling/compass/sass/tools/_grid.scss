@@ -72,10 +72,10 @@ $bp-wide: $bp-first;
 // Foot
 @include at-breakpoint(0 5 $bp-first) {
   .image-foot {
-    @include span-columns(1, 5);
+    @include span-columns(5, 5);
   }
   .efficiency-footer {
-    @include span-columns(4 omega , 5);
+    @include span-columns(5, 5);
   }
 }
 @include at-breakpoint($bp-first 12) {
@@ -83,6 +83,6 @@ $bp-wide: $bp-first;
     @include span-columns(4, 12);
   }
   .efficiency-footer {
-    @include span-columns(8 omega , 12);
+    @include span-columns(6 , 12);
   }
 }
