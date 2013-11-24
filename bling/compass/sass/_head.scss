@@ -3,6 +3,9 @@
   margin-top: 15px;
   padding-bottom: 30px;
   padding-top: 15px;
+  @include breakpoint($bp-mobile) { 
+    margin-top: 0;
+  }
 }
 .logo-top {
   @include breakpoint($bp-mobile) { 

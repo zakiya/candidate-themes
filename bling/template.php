@@ -7,6 +7,18 @@ function bling_preprocess_page(&$vars) {
   }
 }
 
+function bling_preprocess_html(&$vars) {
+  // Add viewport to Head for mobile browsing
+  $viewport = array(
+    '#tag' => 'meta', 
+    '#attributes' => array(
+      'name' => 'viewport', 
+      'content' => 'width=device-width, initial-scale=1, maximum-scale=1',
+    ),
+  );
+  drupal_add_html_head($viewport, 'viewport');
+}
+
 function bling_css_alter(&$css) {
   // If we're only a donation page node, swap out the default css for one used
   // to render donation forms.

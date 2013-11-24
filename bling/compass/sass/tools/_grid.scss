@@ -20,12 +20,58 @@ $grid-padding   : $gutter-width;
 $container-style: static;
 
 // Setup breakpoints
-$bp-first: 720px;
+$bp-first: 520px;
+$bp-second: 980px;
+
+// Setup media queries
 $bp-mobile: 0 $bp-first;
-$bp-wide: $bp-first;
+$bp-tablet: $bp-first+1 $bp-second;
+
+// Setup Susy variables
+$cols-tablet: 9;
+$abp-tablet: $bp-first+1 $cols-tablet $bp-second;
 
 
 // Head and full width columns
+.head, 
+.main,
+.foot, 
+.close {
+  @include container;
+}
+.logo-top {
+  @include span-columns(2, 12);
+}
+.donation-message {
+  @include span-columns(7, 12);
+}
+.image-top {
+  @include span-columns(3 omega, 12); 
+}
+
+@include at-breakpoint($abp-tablet) { 
+  .head, 
+  .main,
+  .foot, 
+  .close {
+    @include container;
+  }
+  .logo-top {
+    @include span-columns(2, $cols-tablet);
+  }
+  .donation-message {
+    @include span-columns(4, $cols-tablet);
+  }
+  .image-top {
+    @include span-columns(3 omega, $cols-tablet); 
+  }
+  .footer-line {
+    @include span-columns(9 omega, $cols-tablet);
+  }
+
+}
+
+// For Handheld devices
 @include at-breakpoint(0 5 $bp-first) {
   .head, 
   .main,
@@ -36,36 +82,30 @@ $bp-wide: $bp-first;
   .logo-top {
     @include span-columns(1, 5);
   }
-}
-@include at-breakpoint($bp-first+1 12) {
-  .head, 
-  .main,
-  .foot, 
-  .close {
-    @include container;
-  }
-  .logo-top {
-    @include span-columns(2, 12);
-  }
   .donation-message {
-    @include span-columns(7, 12);
+    @include span-columns(4 omega, 5);
   }
   .image-top {
-    @include span-columns(3 omega, 12); // We use omega because it is the last column.
+    @include span-columns(5 omega, 5); // We use omega because it is the last column.
+  }
+  .footer-line {
+    @include span-columns(5 omega, 5);
   }
 }
 
-
 // Main
+.node {
+  @include push(2); // We use push mixin to force an empty column
+  @include span-columns(10 omega, 12);
+}
 @include at-breakpoint(0 5 $bp-first) {
   .node {
     @include span-columns(5 omega, 5);
   }
 }
-@include at-breakpoint($bp-first 12) {
+@include at-breakpoint($abp-tablet) {
   .node {
-    @include push(2); // We use push mixin to force an empty column
-    @include span-columns(10 omega, 12);
+    @include span-columns($cols-tablet omega, $cols-tablet);
   }
 }
 
@@ -84,5 +124,13 @@ $bp-wide: $bp-first;
   }
   .efficiency-footer {
     @include span-columns(6 , 12);
+  }
+}
+@include at-breakpoint($abp-tablet) {
+  .image-foot {
+    @include span-columns(4, $cols-tablet);
+  }
+  .efficiency-footer {
+    @include span-columns(5 omega , $cols-tablet);
   }
 }

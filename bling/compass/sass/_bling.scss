@@ -6,11 +6,12 @@ body {
   color: $clr-text;
   font-size: 85%;
   line-height: 1.5em;
+  margin: 0;
 }
 h1 {
   margin-top: .75em;
   @include breakpoint($bp-mobile) { 
-    font-size: 1.2em;
+    font-size: 1.6em;
     margin: .5em 0 .25em 0;
   }
 }

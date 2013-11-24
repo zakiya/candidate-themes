@@ -1,112 +1,160 @@
-@media (max-width: 720px) {
-  /* line 33, ../compass/sass/tools/_grid.scss */
+.head, .main, .foot, .close {
+  *zoom: 1;
+  width: 921px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+.head:after, .main:after, .foot:after, .close:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.logo-top {
+  width: 15.30945%;
+  float: left;
+  margin-right: 1.62866%;
+  display: inline; }
+
+.donation-message {
+  width: 57.65472%;
+  float: left;
+  margin-right: 1.62866%;
+  display: inline; }
+
+.image-top {
+  width: 23.7785%;
+  float: right;
+  margin-right: 0;
+  #margin-left: -15px;
+  display: inline; }
+
+@media (min-width: 521px) and (max-width: 980px) {
+  .head, .main, .foot, .close {
+    width: 687px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto; }
+  .head:after, .main:after, .foot:after, .close:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+  .logo-top {
+    width: 20.52402%;
+    float: left;
+    margin-right: 2.18341%; }
+
+  .donation-message {
+    width: 43.23144%;
+    float: left;
+    margin-right: 2.18341%; }
+
+  .image-top {
+    width: 31.87773%;
+    float: right;
+    margin-right: 0; }
+
+  .footer-line {
+    width: 100%;
+    float: right;
+    margin-right: 0; } }
+@media (max-width: 520px) {
   .head, .main, .foot, .close {
     width: 375px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto; }
-  /* line 38, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .head:after, .main:after, .foot:after, .close:after {
     content: "";
     display: table;
     clear: both; }
 
-  /* line 36, ../compass/sass/tools/_grid.scss */
   .logo-top {
     width: 16.8%;
     float: left;
-    margin-right: 4%; } }
-@media (min-width: 721px) {
-  /* line 44, ../compass/sass/tools/_grid.scss */
-  .head, .main, .foot, .close {
-    width: 921px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto; }
-  /* line 38, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  .head:after, .main:after, .foot:after, .close:after {
-    content: "";
-    display: table;
-    clear: both; }
+    margin-right: 4%; }
 
-  /* line 47, ../compass/sass/tools/_grid.scss */
-  .logo-top {
-    width: 15.30945%;
-    float: left;
-    margin-right: 1.62866%; }
-
-  /* line 50, ../compass/sass/tools/_grid.scss */
   .donation-message {
-    width: 57.65472%;
-    float: left;
-    margin-right: 1.62866%; }
+    width: 79.2%;
+    float: right;
+    margin-right: 0; }
 
-  /* line 53, ../compass/sass/tools/_grid.scss */
   .image-top {
-    width: 23.7785%;
+    width: 100%;
+    float: right;
+    margin-right: 0; }
+
+  .footer-line {
+    width: 100%;
     float: right;
     margin-right: 0; } }
-@media (max-width: 720px) {
-  /* line 61, ../compass/sass/tools/_grid.scss */
+.node {
+  margin-left: 16.93811%;
+  width: 83.06189%;
+  float: right;
+  margin-right: 0;
+  #margin-left: -15px;
+  display: inline; }
+
+@media (max-width: 520px) {
   .node {
     width: 100%;
     float: right;
     margin-right: 0; } }
-@media (min-width: 720px) {
-  /* line 66, ../compass/sass/tools/_grid.scss */
+@media (min-width: 521px) and (max-width: 980px) {
   .node {
-    margin-left: 16.93811%;
-    width: 83.06189%;
+    width: 100%;
     float: right;
     margin-right: 0; } }
-@media (max-width: 720px) {
-  /* line 74, ../compass/sass/tools/_grid.scss */
+@media (max-width: 520px) {
   .image-foot {
     width: 100%;
     float: left;
     margin-right: 4%; }
 
-  /* line 77, ../compass/sass/tools/_grid.scss */
   .efficiency-footer {
     width: 100%;
     float: left;
     margin-right: 4%; } }
-@media (min-width: 720px) {
-  /* line 82, ../compass/sass/tools/_grid.scss */
+@media (min-width: 520px) {
   .image-foot {
     width: 32.24756%;
     float: left;
     margin-right: 1.62866%; }
 
-  /* line 85, ../compass/sass/tools/_grid.scss */
   .efficiency-footer {
     width: 49.18567%;
     float: left;
     margin-right: 1.62866%; } }
-/* line 5, ../compass/sass/tools/_silents.scss */
+@media (min-width: 521px) and (max-width: 980px) {
+  .image-foot {
+    width: 43.23144%;
+    float: left;
+    margin-right: 2.18341%; }
+
+  .efficiency-footer {
+    width: 54.58515%;
+    float: right;
+    margin-right: 0; } }
 body {
   font-family: Helvetica, Arial, sans-serif; }
 
-/* line 5, ../compass/sass/_base.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 9, ../compass/sass/_base.scss */
 nav ul {
   list-style: none; }
 
-/* line 13, ../compass/sass/_base.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 17, ../compass/sass/_base.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none; }
 
-/* line 22, ../compass/sass/_base.scss */
 a {
   color: #cf6400;
   font-weight: bold;
@@ -115,37 +163,30 @@ a {
   text-decoration: none;
   vertical-align: baseline;
   background: transparent; }
-/* line 30, ../compass/sass/_base.scss */
 a:hover {
   text-decoration: underline; }
 
-/* line 35, ../compass/sass/_base.scss */
 ins {
   background-color: #eee;
   color: #000;
   text-decoration: none; }
 
-/* line 41, ../compass/sass/_base.scss */
 mark {
   background-color: #eee;
   color: #000;
   font-style: italic;
   font-weight: 700; }
 
-/* line 48, ../compass/sass/_base.scss */
 del {
   text-decoration: line-through; }
 
-/* line 52, ../compass/sass/_base.scss */
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
   cursor: help; }
 
-/* line 57, ../compass/sass/_base.scss */
 input, select {
   vertical-align: middle; }
 
-/* line 61, ../compass/sass/_base.scss */
 pre, code, kbd, samp {
   font-family: monospace, sans-serif; }
 
@@ -153,52 +194,41 @@ pre, code, kbd, samp {
  * BASELINE STYLES
  */
 /* always force a scrollbar in non-IE */
-/* line 69, ../compass/sass/_base.scss */
 html {
   overflow-y: scroll; }
 
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
-/* line 74, ../compass/sass/_base.scss */
 a:hover, a:active {
   outline: none;
   cursor: pointer; }
 
-/* line 79, ../compass/sass/_base.scss */
 ul, ol {
   list-style-position: inside; }
 
-/* line 83, ../compass/sass/_base.scss */
 ol {
   list-style-type: decimal; }
 
 /* Remove margins for navigation lists */
-/* line 88, ../compass/sass/_base.scss */
 nav ul, nav li {
   margin: 0; }
 
-/* line 92, ../compass/sass/_base.scss */
 small {
   font-size: 85%; }
 
-/* line 96, ../compass/sass/_base.scss */
 strong, th {
   font-weight: 700; }
 
-/* line 100, ../compass/sass/_base.scss */
 td, td img {
   vertical-align: top; }
 
-/* line 104, ../compass/sass/_base.scss */
 sub {
   vertical-align: sub;
   font-size: smaller; }
 
-/* line 109, ../compass/sass/_base.scss */
 sup {
   vertical-align: super;
   font-size: smaller; }
 
-/* line 114, ../compass/sass/_base.scss */
 pre {
   padding: 15px;
   white-space: pre;
@@ -210,78 +240,64 @@ pre {
   word-wrap: break-word;
   /* IE */ }
 
-/* line 126, ../compass/sass/_base.scss */
 textarea {
   overflow: auto; }
 
-/* line 130, ../compass/sass/_base.scss */
 .ie6 legend, .ie7 legend {
   margin-left: -7px; }
 
 /* align checkboxes, radios, text inputs with their label */
-/* line 135, ../compass/sass/_base.scss */
 input[type=radio] {
   vertical-align: text-bottom; }
 
-/* line 139, ../compass/sass/_base.scss */
 input[type=checkbox] {
   vertical-align: bottom; }
 
-/* line 143, ../compass/sass/_base.scss */
 .ie7 input[type=checkbox] {
   vertical-align: baseline; }
 
-/* line 147, ../compass/sass/_base.scss */
 .ie6 input {
   vertical-align: text-bottom; }
 
 /* hand cursor on clickable input elements */
-/* line 152, ../compass/sass/_base.scss */
 label, input[type=button], input[type=submit], button {
   cursor: pointer; }
 
 /* webkit browsers add a 2px margin outside the chrome of form elements */
 /*button, input, select, textarea { margin: 0; } */
 /* colors for form validity */
-/* line 162, ../compass/sass/_base.scss */
 input:invalid, textarea:invalid {
   border-radius: 1px;
   -moz-box-shadow: 0 0 5px red;
   -webkit-box-shadow: 0 0 5px red;
   box-shadow: 0 0 5px red; }
 
-/* line 169, ../compass/sass/_base.scss */
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
   background-color: #f0dddd; }
 
 /* These selection declarations have to be separate.
  */
-/* line 175, ../compass/sass/_base.scss */
 ::-moz-selection {
   background: #fdc82f;
   color: #222222;
   text-shadow: none; }
 
-/* line 181, ../compass/sass/_base.scss */
 ::selection {
   background: #fdc82f;
   color: #222222;
   text-shadow: none; }
 
 /*  iOS highlight color */
-/* line 188, ../compass/sass/_base.scss */
 a:link {
   -webkit-tap-highlight-color: #FF5E99; }
 
 /* make buttons play nice in IE:
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
-/* line 194, ../compass/sass/_base.scss */
 button {
   width: auto;
   overflow: visible; }
 
 /* bicubic resizing for non-native sized IMG:  */
-/* line 200, ../compass/sass/_base.scss */
 .ie7 img {
   -ms-interpolation-mode: bicubic; }
 
@@ -289,7 +305,6 @@ button {
  * Helpers
  */
 /* for image replacement */
-/* line 208, ../compass/sass/_base.scss */
 .ir {
   display: block;
   text-indent: -999em;
@@ -299,14 +314,12 @@ button {
 
 /* Hide for both screenreaders and browsers
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 218, ../compass/sass/_base.scss */
 .hidden {
   display: none;
   visibility: hidden; }
 
 /* Hide only visually, but have it available for screenreaders
    www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
-/* line 225, ../compass/sass/_base.scss */
 .visuallyhidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -314,354 +327,358 @@ button {
   clip: rect(1px, 1px, 1px, 1px); }
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
-/* line 233, ../compass/sass/_base.scss */
 .cf:before, .cf:after {
   content: ".";
   display: block;
   height: 0;
   visibility: hidden; }
 
-/* line 239, ../compass/sass/_base.scss */
 .cf:after {
   clear: both; }
 
-/* line 243, ../compass/sass/_base.scss */
-.cf {
-  zoom: 1; }
-
-/* line 248, ../compass/sass/_base.scss */
 body {
   background-image: url(/sites/all/themes/bling/img/body-bg.gif);
   background-position: initial;
   background-repeat: repeat; }
 
 @media print {
-  /* line 260, ../compass/sass/_base.scss */
   * {
     background: transparent !important;
     color: #444 !important;
     text-shadow: none !important; }
 
-  /* line 265, ../compass/sass/_base.scss */
   a, a:visited {
     color: #444 !important;
     text-decoration: underline; }
 
-  /* line 269, ../compass/sass/_base.scss */
   a:after {
     content: " (" attr(href) ")"; }
 
-  /* line 272, ../compass/sass/_base.scss */
   abbr:after {
     content: " (" attr(title) ")"; }
 
-  /* line 275, ../compass/sass/_base.scss */
   .ir a:after {
     content: ""; }
 
   /* Don't show links for images */
-  /* line 280, ../compass/sass/_base.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
 
-  /* line 284, ../compass/sass/_base.scss */
   thead {
     display: table-header-group; }
 
   /* css-discuss.incutio.com/wiki/Printing_Tables */
-  /* line 289, ../compass/sass/_base.scss */
   tr, img {
     page-break-inside: avoid; }
 
   @page {
     margin: .5cm; }
 
-  /* line 295, ../compass/sass/_base.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3; }
 
-  /* line 300, ../compass/sass/_base.scss */
   h2, h3 {
     page-break-after: avoid; } }
 /* IE Max-width hack */
-/* line 306, ../compass/sass/_base.scss */
-#container, #footer {
-  width: expression(document.body.clientWidth<742?"740px":document.body.clientWidth>1202?"1200px":"auto"); }
-
-/* line 1, ../compass/sass/_bling.scss */
 body {
   background-image: url(/sites/all/themes/bling/img/body-bg.gif);
   background-position: initial;
   background-repeat: repeat;
   color: #222222;
   font-size: 85%;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  margin: 0; }
 
-/* line 10, ../compass/sass/_bling.scss */
 h1 {
   margin-top: .75em; }
-@media (min-width: 0) and (max-width: 720px) {
-  /* line 10, ../compass/sass/_bling.scss */
+@media (min-width: 0) and (max-width: 520px) {
   h1 {
-    font-size: 1.2em;
+    font-size: 1.6em;
     margin: .5em 0 .25em 0; } }
 
-/* line 1, ../compass/sass/_close.scss */
 .close {
   color: #848484;
   font-size: .85em;
   text-align: right;
   padding: 2em 0; }
-/* line 10, ../compass/sass/_close.scss */
 .close a, .close a:hover, .close a:active, .close a.active, .close a:visited {
   border-bottom: 1px dotted;
   color: #848484;
   font-weight: 400; }
-/* line 15, ../compass/sass/_close.scss */
 .close a:hover {
   color: #cdcdcd; }
-@media (min-width: 0) and (max-width: 720px) {
-  /* line 1, ../compass/sass/_close.scss */
+@media (min-width: 0) and (max-width: 520px) {
   .close {
     text-align: center; } }
 
-/* line 1, ../compass/sass/_head.scss */
 .head {
   background-color: #f5f5f5;
   margin-top: 15px;
   padding-bottom: 30px;
   padding-top: 15px; }
+@media (min-width: 0) and (max-width: 520px) {
+  .head {
+    margin-top: 0; } }
 
-@media (min-width: 0) and (max-width: 720px) {
-  /* line 9, ../compass/sass/_head.scss */
+@media (min-width: 0) and (max-width: 520px) {
   .logo-top img {
     float: left;
     height: auto;
     margin: 0 .1em .1em 0;
     width: 100%; } }
 
-@media (min-width: 0) and (max-width: 720px) {
-  /* line 17, ../compass/sass/_head.scss */
+@media (min-width: 0) and (max-width: 520px) {
   .image-top {
     background: #feeec0;
     clear: both;
     display: table;
     padding: .2em 0; }
-  /* line 23, ../compass/sass/_head.scss */
   .image-top img {
     float: left;
     height: auto;
     padding: 10px;
     width: 45%; } }
 
-/* line 31, ../compass/sass/_head.scss */
 .donation-image-caption {
   color: #888888;
   font-size: .8em;
   line-height: 1.2em; }
-@media (min-width: 0) and (max-width: 720px) {
-  /* line 31, ../compass/sass/_head.scss */
+@media (min-width: 0) and (max-width: 520px) {
   .donation-image-caption {
     padding: 3em 1em 0 0; } }
 
-/* line 1, ../compass/sass/_foot.scss */
 .foot {
   background-color: #f5f5f5;
   color: #7e7f90;
-  padding-bottom: 24px; }
-/* line 5, ../compass/sass/_foot.scss */
+  padding-bottom: 1.5em;
+  padding-top: 1.5em; }
 .foot img {
   margin-left: 5px; }
-@media (min-width: 0) and (max-width: 720px) {
-  /* line 5, ../compass/sass/_foot.scss */
+@media (min-width: 0) and (max-width: 520px) {
   .foot img {
     display: block;
     margin: 0 auto; } }
-/* line 12, ../compass/sass/_foot.scss */
+@media (min-width: 521px) and (max-width: 980px) {
+  .foot img {
+    display: block;
+    margin: 0 auto; } }
 .foot p {
   margin: 0 0 .85em; }
+.foot p:last-child {
+  margin-bottom: 0; }
 
-/* line 1, ../compass/sass/_main.scss */
 .main {
   background-color: #fff;
   padding-bottom: 2em; }
 
-/* line 6, ../compass/sass/_main.scss */
+form {
+  padding-top: 1.5em; }
+
 fieldset {
   margin-bottom: 0; }
 
-/* line 9, ../compass/sass/_main.scss */
+@media (min-width: 0) and (max-width: 520px) {
+  legend {
+    color: #cf6400;
+    font-size: 1.6em;
+    font-weight: normal !important; } }
+
 .description {
   color: #666666;
   line-height: 1.5em;
   padding: 0 .35em; }
 
-/* line 14, ../compass/sass/_main.scss */
 .error {
   display: block;
   font-size: .85em;
-  font-weight: normal;
+  font-weight: normal !important;
   padding: 0 0 .75em 0; }
 
-/* line 20, ../compass/sass/_main.scss */
 .form-text {
+  border: 1px solid;
+  border-color: #ababab #cfcfcf #dbdbdb #ababab;
   padding: 3px; }
-@media (min-width: 0) and (max-width: 720px) {
-  /* line 20, ../compass/sass/_main.scss */
+@media (min-width: 0) and (max-width: 520px) {
   .form-text {
     font-size: 1.5em;
-    height: 2em;
+    height: 3em;
     width: 349px; } }
 
-/* line 28, ../compass/sass/_main.scss */
 .form-item {
   margin: .5em 0; }
 
-/* line 31, ../compass/sass/_main.scss */
 #edit-actions {
   border: #ffedba; }
 
-/* line 34, ../compass/sass/_main.scss */
 .webform-component-fieldset {
   border: none; }
-@media (min-width: 0) and (max-width: 720px) {
-  /* line 34, ../compass/sass/_main.scss */
+@media (min-width: 0) and (max-width: 520px) {
   .webform-component-fieldset {
     margin-bottom: 30px; } }
-/* line 39, ../compass/sass/_main.scss */
 .webform-component-fieldset .form-item {
   margin: 1em 0; }
 
-/* line 43, ../compass/sass/_main.scss */
 .form-radios .form-item {
   display: inline-block;
+  float: left;
   margin-top: .7em;
   padding-right: 15px; }
-/* line 48, ../compass/sass/_main.scss */
 .form-radios .form-item input, .form-radios .form-item label {
   display: block;
   text-align: center; }
-/* line 52, ../compass/sass/_main.scss */
 .form-radios .form-item input {
   padding-top: 5px; }
-/* line 55, ../compass/sass/_main.scss */
 .form-radios .form-item label {
   padding-top: 4px; }
+@media (min-width: 0) and (max-width: 520px) {
+  .form-radios .form-item label {
+    padding-bottom: 4px; } }
 
-/* line 59, ../compass/sass/_main.scss */
 .fundraiser-donation-form > div {
   position: relative; }
 
-/* line 63, ../compass/sass/_main.scss */
+#webform-component-donation {
+  width: 90%; }
 #webform-component-donation label {
   width: auto; }
-/* line 66, ../compass/sass/_main.scss */
 #webform-component-donation legend {
   display: none; }
-/* line 69, ../compass/sass/_main.scss */
 #webform-component-donation .form-text {
   font-size: 100%;
   height: auto;
   width: auto; }
-@media (min-width: 720px) {
-  /* line 62, ../compass/sass/_main.scss */
+@media (min-width: 0) and (max-width: 520px) {
   #webform-component-donation {
-    width: 90%; } }
+    width: auto; } }
 
-@media (min-width: 720px) {
-  /* line 79, ../compass/sass/_main.scss */
+#webform-component-donor-information, #webform-component-billing-information {
+  float: left;
+  width: 320px; }
+@media (min-width: 0) and (max-width: 520px) {
   #webform-component-donor-information, #webform-component-billing-information {
-    float: left;
-    width: 345px; } }
+    float: none;
+    width: auto; } }
 
-/* line 88, ../compass/sass/_main.scss */
 #webform-component-donor-information legend, #webform-component-billing-information legend, #webform-component-payment-information legend {
-  font-weight: bold; }
-/* line 91, ../compass/sass/_main.scss */
+  font-weight: bold;
+  padding-left: 0; }
 #webform-component-donor-information label, #webform-component-billing-information label, #webform-component-payment-information label {
-  font-weight: normal; }
-@media (min-width: 720px) {
-  /* line 95, ../compass/sass/_main.scss */
+  display: inline-block;
+  font-weight: normal;
+  width: 130px; }
+#webform-component-donor-information .form-text, #webform-component-donor-information select, #webform-component-billing-information .form-text, #webform-component-billing-information select, #webform-component-payment-information .form-text, #webform-component-payment-information select {
+  display: inline-block;
+  width: 175px; }
+@media (min-width: 0) and (max-width: 520px) {
   #webform-component-donor-information label, #webform-component-billing-information label, #webform-component-payment-information label {
-    display: inline-block;
-    width: 130px; }
-  /* line 100, ../compass/sass/_main.scss */
+    display: block;
+    font-weight: bold;
+    width: auto; }
   #webform-component-donor-information .form-text, #webform-component-donor-information select, #webform-component-billing-information .form-text, #webform-component-billing-information select, #webform-component-payment-information .form-text, #webform-component-payment-information select {
-    display: inline-block;
-    width: 175px; } }
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1.1em;
+    width: 100%; } }
 
-/* line 106, ../compass/sass/_main.scss */
 #webform-component-donation--amount {
   margin: 0; }
 
-/* line 109, ../compass/sass/_main.scss */
 #webform-component-donation--other-amount {
   display: inline-block;
-  margin: 0.41em 0 0;
-  width: 54px; }
-/* line 113, ../compass/sass/_main.scss */
+  margin: 1em 0 0.3em;
+  width: 154px; }
 #webform-component-donation--other-amount .form-text {
   width: 30px; }
-/* line 116, ../compass/sass/_main.scss */
+@media (min-width: 0) and (max-width: 520px) {
+  #webform-component-donation--other-amount .form-text {
+    height: 3em;
+    width: 54px; } }
 #webform-component-donation--other-amount label {
   display: none; }
-@media (min-width: 720px) {
-  /* line 109, ../compass/sass/_main.scss */
+@media (min-width: 0) and (max-width: 520px) {
   #webform-component-donation--other-amount {
-    width: 154px; } }
+    width: 74px; } }
 
-/* line 124, ../compass/sass/_main.scss */
+#webform-component-payment-information {
+  clear: both; }
 #webform-component-payment-information legend {
   font-weight: bold; }
-/* line 127, ../compass/sass/_main.scss */
 #webform-component-payment-information select {
   margin-right: .5em;
   width: auto; }
-/* line 131, ../compass/sass/_main.scss */
+@media (min-width: 0) and (max-width: 520px) {
+  #webform-component-payment-information select {
+    display: inline-block;
+    width: 40%; } }
 #webform-component-payment-information fieldset {
   border: none;
   padding: 0; }
-/* line 135, ../compass/sass/_main.scss */
 #webform-component-payment-information .fieldset-wrapper > div {
-  display: inline-block;
-  width: 345px; }
+  display: block;
+  float: left;
+  padding: 0 1em 0 0;
+  width: 320px; }
+@media (min-width: 0) and (max-width: 520px) {
+  #webform-component-payment-information .webform-component-fieldset {
+    margin-bottom: 0; } }
 
-/* line 140, ../compass/sass/_main.scss */
+@media (min-width: 0) and (max-width: 520px) {
+  #webform-component-payment-information--recurs-monthly {
+    margin-top: 0; }
+  #webform-component-payment-information--recurs-monthly label {
+    display: inline-block; } }
+
 #edit-submitted-donation-amount {
   float: left; }
 
-/* line 143, ../compass/sass/_main.scss */
 .form-submit {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   text-shadow: 0px 1px 5px charcoal;
-  background: url('../images/foo.png'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe59e), color-stop(100%, #ffc828)), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #ffe59e), color-stop(100%, #ffc828));
-  background: url('../images/foo.png'), -webkit-linear-gradient(top, #ffe59e, #ffc828), -webkit-radial-gradient(#ffe59e, #ffc828 100px);
-  background: url('../images/foo.png'), -moz-linear-gradient(top, #ffe59e, #ffc828), -moz-radial-gradient(#ffe59e, #ffc828 100px);
-  background: url('../images/foo.png'), -o-linear-gradient(top, #ffe59e, #ffc828), -o-radial-gradient(#ffe59e, #ffc828 100px);
-  background: url('../images/foo.png'), linear-gradient(top, #ffe59e, #ffc828), radial-gradient(#ffe59e, #ffc828 100px);
+  background: #ffe59e;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: -moz-linear-gradient(top, #ffe59e 0%, #ffc828 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffe59e), color-stop(100%, #ffc828));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffe59e 0%, #ffc828 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffe59e 0%, #ffc828 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffe59e 0%, #ffc828 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ffe59e 0%, #ffc828 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffe59e, endColorstr=#ffc828,GradientType=0 );
+  /* IE6-8 */
   border: 2px solid #fed256;
   color: #524a35;
   font-size: 1.4em;
   font-weight: bold;
   text-transform: uppercase;
   padding: .5em 1em;
-  width: 100%; }
-@media (min-width: 720px) {
-  /* line 143, ../compass/sass/_main.scss */
+  width: auto; }
+@media (min-width: 0) and (max-width: 520px) {
   .form-submit {
-    width: auto; } }
+    width: 100%; } }
 
-/* line 160, ../compass/sass/_main.scss */
 .fundraiser_submit_message {
-  color: #888888; }
-/* line 162, ../compass/sass/_main.scss */
+  bottom: 0;
+  color: #888888;
+  left: 150px;
+  position: absolute; }
 .fundraiser_submit_message img {
   padding: 0 10px 0 0; }
-@media (min-width: 720px) {
-  /* line 160, ../compass/sass/_main.scss */
+@media (min-width: 0) and (max-width: 520px) {
   .fundraiser_submit_message {
-    bottom: 0;
-    left: 150px;
-    position: absolute;
-    width: 270px; } }
+    left: 0;
+    position: relative; } }
+
+* + html .form-submit {
+  padding: .25em; }
