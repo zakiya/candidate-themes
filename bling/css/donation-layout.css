@@ -91,8 +91,13 @@
     width: 100%;
     float: right;
     margin-right: 0; } }
+.promo {
+  width: 15.30945%;
+  float: left;
+  margin-right: 1.62866%;
+  display: inline; }
+
 .node {
-  margin-left: 16.93811%;
   width: 83.06189%;
   float: right;
   margin-right: 0;
@@ -100,11 +105,19 @@
   display: inline; }
 
 @media (max-width: 520px) {
+  .promo {
+    width: 100%;
+    float: right;
+    margin-right: 0; }
+
   .node {
     width: 100%;
     float: right;
     margin-right: 0; } }
 @media (min-width: 521px) and (max-width: 980px) {
+  .promo {
+    display: none; }
+
   .node {
     width: 100%;
     float: right;
@@ -478,6 +491,9 @@ fieldset {
     color: #cf6400;
     font-size: 1.6em;
     font-weight: normal !important; } }
+
+.promo img {
+  width: 100%; }
 
 .description {
   color: #666666;

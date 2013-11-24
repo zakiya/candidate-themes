@@ -20,7 +20,11 @@
 <div class="main">
   <?php if (!empty($tabs['#primary'])): print '<ul class="tabs primary">'. render($tabs) .'</ul>'; endif; ?>
   <?php if ($show_messages && $messages): print $messages; endif; ?>
+  
   <?php print render($page['content']); ?>
+  <div class="promo">
+    <img src="/sites/all/themes/bling/img/onetime_sidepromo_challengeC.jpg" alt="Can we count on you?"/>
+  </div>
 </div><!--/main-->
 
 <div class="foot">

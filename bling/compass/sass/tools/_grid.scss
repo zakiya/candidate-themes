@@ -28,6 +28,7 @@ $bp-mobile: 0 $bp-first;
 $bp-tablet: $bp-first+1 $bp-second;
 
 // Setup Susy variables
+$cols-handheld: 5;
 $cols-tablet: 9;
 $abp-tablet: $bp-first+1 $cols-tablet $bp-second;
 
@@ -72,7 +73,7 @@ $abp-tablet: $bp-first+1 $cols-tablet $bp-second;
 }
 
 // For Handheld devices
-@include at-breakpoint(0 5 $bp-first) {
+@include at-breakpoint(0 $cols-handheld $bp-first) {
   .head, 
   .main,
   .foot, 
@@ -80,42 +81,50 @@ $abp-tablet: $bp-first+1 $cols-tablet $bp-second;
     @include container;
   }
   .logo-top {
-    @include span-columns(1, 5);
+    @include span-columns(1, $cols-handheld);
   }
   .donation-message {
-    @include span-columns(4 omega, 5);
+    @include span-columns(4 omega, $cols-handheld);
   }
   .image-top {
-    @include span-columns(5 omega, 5); // We use omega because it is the last column.
+    @include span-columns($cols-handheld omega, $cols-handheld); // We use omega because it is the last column.
   }
   .footer-line {
-    @include span-columns(5 omega, 5);
+    @include span-columns($cols-handheld omega, $cols-handheld);
   }
 }
 
 // Main
+.promo {
+  @include span-columns(2, 12);
+}
 .node {
-  @include push(2); // We use push mixin to force an empty column
   @include span-columns(10 omega, 12);
 }
-@include at-breakpoint(0 5 $bp-first) {
+@include at-breakpoint(0 $cols-handheld $bp-first) {
+  .promo {
+    @include span-columns($cols-handheld omega, $cols-handheld);
+  }
   .node {
-    @include span-columns(5 omega, 5);
+    @include span-columns($cols-handheld omega, $cols-handheld);
   }
 }
 @include at-breakpoint($abp-tablet) {
+  .promo {
+    display: none;
+  }
   .node {
     @include span-columns($cols-tablet omega, $cols-tablet);
   }
 }
 
 // Foot
-@include at-breakpoint(0 5 $bp-first) {
+@include at-breakpoint(0 $cols-handheld $bp-first) {
   .image-foot {
-    @include span-columns(5, 5);
+    @include span-columns($cols-handheld, $cols-handheld);
   }
   .efficiency-footer {
-    @include span-columns(5, 5);
+    @include span-columns($cols-handheld, $cols-handheld);
   }
 }
 @include at-breakpoint($bp-first 12) {
@@ -131,6 +140,6 @@ $abp-tablet: $bp-first+1 $cols-tablet $bp-second;
     @include span-columns(4, $cols-tablet);
   }
   .efficiency-footer {
-    @include span-columns(5 omega , $cols-tablet);
+    @include span-columns($cols-handheld omega , $cols-tablet);
   }
 }
