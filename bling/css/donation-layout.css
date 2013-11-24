@@ -336,11 +336,6 @@ button {
 .cf:after {
   clear: both; }
 
-body {
-  background-image: url(/sites/all/themes/bling/img/body-bg.gif);
-  background-position: initial;
-  background-repeat: repeat; }
-
 @media print {
   * {
     background: transparent !important;
@@ -381,7 +376,6 @@ body {
 
   h2, h3 {
     page-break-after: avoid; } }
-/* IE Max-width hack */
 body {
   background-image: url(/sites/all/themes/bling/img/body-bg.gif);
   background-position: initial;

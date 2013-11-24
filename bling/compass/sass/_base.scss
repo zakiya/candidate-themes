@@ -240,20 +240,6 @@ button {
   clear: both;
 }
 
-.cf {
-  zoom: 1;
-}
-
-
-body {
-  @extend %base-font;
-  background-image: url(/sites/all/themes/bling/img/body-bg.gif);
-  background-position: initial;
-  background-repeat: repeat;
-}
-
-
-
 
 
 @media print {
@@ -300,9 +286,4 @@ body {
   h2,h3 {
     page-break-after: avoid;
   }
-}
-
-/* IE Max-width hack */
-#container,#footer {
-  width: expression(document.body.clientWidth<742?"740px":document.body.clientWidth>1202?"1200px":"auto");
 }
