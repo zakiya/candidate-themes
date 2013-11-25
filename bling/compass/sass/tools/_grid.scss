@@ -119,20 +119,18 @@ $abp-tablet: $bp-first+1 $cols-tablet $bp-second;
 }
 
 // Foot
+.image-foot {
+  @include span-columns(4, 12);
+}
+.efficiency-footer {
+  @include span-columns(6 , 12);
+}
 @include at-breakpoint(0 $cols-handheld $bp-first) {
   .image-foot {
     @include span-columns($cols-handheld, $cols-handheld);
   }
   .efficiency-footer {
     @include span-columns($cols-handheld, $cols-handheld);
-  }
-}
-@include at-breakpoint($bp-first 12) {
-  .image-foot {
-    @include span-columns(4, 12);
-  }
-  .efficiency-footer {
-    @include span-columns(6 , 12);
   }
 }
 @include at-breakpoint($abp-tablet) {

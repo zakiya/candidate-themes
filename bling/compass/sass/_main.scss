@@ -10,6 +10,7 @@ fieldset {
   margin-bottom: 0;
 }
 legend {
+  color: $clr-text;
   @include breakpoint($bp-mobile) {
     color: shade($clr-orange, 0%);
     font-size: 1.6em;

@@ -122,6 +122,18 @@
     width: 100%;
     float: right;
     margin-right: 0; } }
+.image-foot {
+  width: 32.24756%;
+  float: left;
+  margin-right: 1.62866%;
+  display: inline; }
+
+.efficiency-footer {
+  width: 49.18567%;
+  float: left;
+  margin-right: 1.62866%;
+  display: inline; }
+
 @media (max-width: 520px) {
   .image-foot {
     width: 100%;
@@ -132,16 +144,6 @@
     width: 100%;
     float: left;
     margin-right: 4%; } }
-@media (min-width: 520px) {
-  .image-foot {
-    width: 32.24756%;
-    float: left;
-    margin-right: 1.62866%; }
-
-  .efficiency-footer {
-    width: 49.18567%;
-    float: left;
-    margin-right: 1.62866%; } }
 @media (min-width: 521px) and (max-width: 980px) {
   .image-foot {
     width: 43.23144%;
@@ -486,6 +488,8 @@ form {
 fieldset {
   margin-bottom: 0; }
 
+legend {
+  color: #222222; }
 @media (min-width: 0) and (max-width: 520px) {
   legend {
     color: #cf6400;
